@@ -1,0 +1,71 @@
+@use "../abstracts" as *;
+
+/* ========== HEADER =========== */
+.header {
+  width: 100%;
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-radius: 0 0 $border-radius $border-radius;
+}
+
+/* ========== NAVIGATION =========== */
+.nav {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    @media screen and (max-width: 767px){
+      position: fixed;
+      background-color: var(--bg-color);
+      padding: 2.5rem 0;
+      width: 100%;
+      top: -100%; //5rem when click
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transition: .4s;
+      border-radius: 0 0 $border-radius $border-radius;
+      z-index: 11;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+  &__link, &__toggle {
+    color: var(--body-color);
+  }
+  &__toggle, &__close {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  &__close {
+    display: none;
+  }
+}
+
+/* Show menu */
+.show-menu {
+  top: calc($header-height - 1rem);
+}
+
+.hide-toggle {
+  display: none;
+}
+
+.show-close {
+  display: block;
+}
+
+
+
+
+
+/* Change background header */

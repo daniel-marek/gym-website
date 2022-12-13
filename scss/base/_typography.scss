@@ -1,0 +1,41 @@
+@use "../abstracts/" as a;
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: a.rem(38);
+}
+h2 {
+  font-size: a.rem(30);
+}
+h3 {
+  font-size: a.rem(26);
+}
+h4 {
+  font-size: a.rem(22);
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.8; // 33/18
+  font-size: a.rem(18);
+}
+
+ul {
+  font-size: a.rem(18);
+  list-style: none;
+  line-height: 1.8;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  
+}
+

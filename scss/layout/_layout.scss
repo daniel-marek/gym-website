@@ -1,0 +1,25 @@
+@use "../abstracts/" as a;
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.section__description {
+  padding-bottom: 3rem;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: a.rem(24);
+  margin-right: a.rem(24);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+i {
+  font-size: 1.4rem;
+}
+

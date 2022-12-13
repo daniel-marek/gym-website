@@ -1,0 +1,42 @@
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+
+  &__content {
+    position: absolute;
+    bottom: 15%;
+  }
+
+  &__title {
+    color: var(--title-color-alt);
+  }
+
+  &__description {
+    color: var(--body-color-alt);
+  }
+}
+#desktop {
+  display: none;
+}
+
+.home__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+
+

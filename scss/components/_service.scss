@@ -1,0 +1,28 @@
+@use "../abstracts/" as *;
+
+.service__content {
+  text-align: center;
+}
+
+.service__offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.service__element {
+  max-width: 300px;
+  border-radius: 10px;
+  // background-color: var(--bg-color);
+  box-shadow: $box-shadow;
+  gap: 0;
+  & h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
+.service__title {
+  height: 100%;
+}
