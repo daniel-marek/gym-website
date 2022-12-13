@@ -7,16 +7,26 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: a.rem(38);
+  font-size: a.rem(30);
+  margin-bottom: 0.6rem;
 }
 h2 {
-  font-size: a.rem(30);
+  font-size: a.rem(28);
 }
 h3 {
-  font-size: a.rem(26);
+  font-size: a.rem(20);
 }
 h4 {
-  font-size: a.rem(22);
+  font-size: a.rem(20);
+}
+
+@include a.breakpoint(medium) {
+  h1 {
+    font-size: a.rem(38);
+  }
+  h3 {
+    font-size: a.rem(24);
+  }
 }
 
 p {
