@@ -52,6 +52,7 @@ h1 {
 
 h2 {
   font-size: 1.75rem;
+  margin-bottom: 2rem;
 }
 
 h3 {
@@ -90,11 +91,13 @@ a, a:visited, a:active {
 }
 
 .section {
-  padding: 4rem 0 2rem;
+  padding: 4rem 0 4rem;
 }
-
-.section__description {
-  padding-bottom: 3rem;
+.section__data {
+  text-align: left;
+}
+.section__data-center {
+  text-align: center;
 }
 
 .container {
@@ -246,8 +249,8 @@ i {
   line-height: 0;
 }
 
-.service__content {
-  text-align: center;
+.about {
+  padding-bottom: 0;
 }
 
 .service__offer {
@@ -258,39 +261,47 @@ i {
 }
 
 .service__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 300px;
   border-radius: 10px;
   box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.2);
-  gap: 0;
 }
 .service__element h3 {
   margin-top: 0.5rem;
   margin-bottom: 0.7rem;
 }
 
-.service__title {
-  height: 100%;
-}
-
 .location {
   background: var(--bg-color-alt);
   padding-bottom: 4rem;
 }
-.location__content {
+.location__container {
   color: var(--body-color-alt);
 }
-.location__content img {
-  margin-bottom: 1rem;
+.location__data {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.location__data img {
+  max-width: 50%;
+}
+.location__description p {
+  margin-bottom: 0;
 }
 .location__element {
   display: flex;
   flex-direction: column;
-}
-.location__address, .location__hours {
-  margin-bottom: 2rem;
+  gap: 1.5rem;
 }
 
 .location__tittle {
+  margin-bottom: 0.5rem;
+}
+
+.location__subtitle {
   margin-bottom: 0.5rem;
 }
 

@@ -3,23 +3,32 @@
 .location {
   background: var(--bg-color-alt);
   padding-bottom: 4rem;
-  &__content {
+  &__container {
     color: var(--body-color-alt);
   }
-  &__content img {
-    margin-bottom: 1rem;
+  &__data {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    & img {
+      max-width: 50%;
+    }
+  }
+  &__description p {
+    margin-bottom: 0;
   }
   &__element {
     display: flex;
     flex-direction: column;
-  }
-  &__address, &__hours {
-    margin-bottom: 2rem;
-  }
-  
+    gap: 1.5rem;
+  }  
 }
 
 .location__tittle {
+  margin-bottom: 0.5rem;
+}
+
+.location__subtitle {
   margin-bottom: 0.5rem;
 }
 

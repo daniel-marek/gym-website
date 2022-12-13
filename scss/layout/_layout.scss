@@ -1,11 +1,13 @@
 @use "../abstracts/" as a;
 
 .section {
-  padding: 4rem 0 2rem;
-}
-
-.section__description {
-  padding-bottom: 3rem;
+  padding: 4rem 0 4rem;
+  &__data {
+    text-align: left;
+    &-center {
+      text-align: center;
+    }
+  }
 }
 
 .container {
