@@ -273,6 +273,10 @@ i {
   margin-bottom: 0.7rem;
 }
 
+.service__filter {
+  filter: brightness(0.8);
+}
+
 .location {
   background: var(--bg-color-alt);
   padding-bottom: 4rem;
