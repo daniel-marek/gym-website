@@ -12,12 +12,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- ========== CSS ========== -->
   <link rel="stylesheet" href="dist/main.css">
-  <!-- ========== JS ========== -->
-  
+  <!-- ========== SWIPER ========== -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
   <title>Fitness centrum Kutná Hora</title>
 </head>
 <body>
+
+   <!-- ========== HEADER ========== -->
+
   <header class="header" id="header">
     <nav class="nav container">
       <a href="#" class="nav__logo">
@@ -43,6 +48,9 @@
   </header>
 
   <main class="main">
+
+    <!-- ========== HOME ========== -->
+
     <section class="home" id="home">
       <video class="home__video" src="video/gym-git.mp4" muted autoplay></video>
       <div class="overlay"></div>
@@ -52,6 +60,8 @@
         <p class="home__description" id="desktop">Fitness centrum, které splní i ty nejnáročnější požadavky. Ať už jste rekreační sportovec nebo fitness profesionál, u nás najdete vše, co potřebujete. Nové moderní stroje k procvičení celého těla a samostatná kardio zóna - veškeré služby na jednom místě.</p>
       </div>
     </section>
+
+    <!-- ========== BUTTONS ========== -->
 
     <section class="buttons container">
       <a href="#treneri">
@@ -64,6 +74,8 @@
         <i class="fa-solid fa-clock"></i> <p>Otevírací doba</p>
       </a>                   
     </section>
+
+    <!-- ========== ABOUT ========== -->
 
     <section class="about section">
       <div class="about__container grid">
@@ -78,6 +90,8 @@
         </div>
       </div>
     </section>
+
+    <!-- ========== SERVICE ========== -->
 
     <section class="service section container">
       <div class="service__container grid">
@@ -101,6 +115,8 @@
         </div>
       </div>
     </section>
+
+    <!-- ========== LOCATIONS ========== -->
 
     <section class="location section">
       <div class="location__container container grid">
@@ -137,14 +153,60 @@
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.2904871651053!2d15.272869515882547!3d49.94965313120289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c410635cc37bd%3A0xd4c09ed20b667b8f!2zxaB0ZWbDoW5pa292YSA1NS80OSwgSGxvdcWha2EsIDI4NCAwMSBLdXRuw6EgSG9yYQ!5e0!3m2!1scs!2scz!4v1670861488315!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+    </section>
 
+    <!-- ========== SPACE ========== -->
+
+    <section class="space section">
+      <div class="grid">
+        <div class="section__data container">
+          <h2>Prostory</h2>
+          <p>Na ploše o výměře 1000 m² najdete zónu s běžeckými pásy a silovou zónu s více než 50 stroji určenými ke cvičení jak s vlastní vahou, tak i se závažími. Samozřejmostí jsou všechny typy tlakových a tahových strojů vyvinutých v souladu s biomechanikou lidského těla. V silové zóně můžete využít jednoruční činky od 2 do 50 kilogramů, olympijské tyče, hex bar, axle bar, safety squat bar, dřepovací klec, benchpress a lavice s nastavitelným úhlem opěradla. Celkové vybavení tvoří více než 50 strojů na cvičení od značek Technogym, Stanmark, Stronggear a více než 15 strojů pro kardio.</p>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(img/fitness-kutna-hora-1.jpg);"></div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> --> 
+          <div class="swiper-btn-bg">
+            <div class="swiper-btn-prev">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="swiper-btn-next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- ========== PRICING ========== -->
 
+    <section class="pricing section">
+      <div class="container grid">
+        <div class="pricing__data section__data">
+          <h2>Ceník</h2>
+          <p>Studentům nabízíme zvýhodněné vstupné po předložení studentského průkazu a pravidelným návštěvníkům níže uvedené permanentky. Akceptujeme karty Multisport.
+          </p>
+        </div>
+      </div>
+
+
+    </section>
       
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
