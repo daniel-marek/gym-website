@@ -260,6 +260,7 @@ iframe:hover {
 }
 .swiper-btn-next:hover, .swiper-btn-prev:hover {
   background: var(--bg-color-black);
+  color: var(--detail-color-white);
 }
 
 .section {
