@@ -8,6 +8,7 @@
   --bg-color: #ffffff;
   --bg-color-black: #000000;
   --bg-color-alt: #101010;
+  --footer-grey: #C7C7C7;
   --detail-color: #000000;
   --detail-color-white: #ffffff;
 }
@@ -106,6 +107,7 @@ a, a:visited, a:active {
   margin: auto;
   border-radius: 10px;
   background-color: white;
+  overflow: hidden;
   transform: translateY(-33.333%);
   box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.2);
 }
@@ -147,6 +149,7 @@ a, a:visited, a:active {
   max-width: 270px;
   border-radius: 10px;
   box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 .service__element h4 {
   margin-top: 0.5rem;
@@ -209,10 +212,6 @@ iframe {
 }
 iframe:hover {
   filter: grayscale(0%);
-}
-
-.space {
-  padding: 4rem 0 2rem;
 }
 
 .pricing {
@@ -300,6 +299,41 @@ iframe:hover {
 .swiper-btn-next:hover, .swiper-btn-prev:hover {
   background: var(--bg-color-black);
   color: var(--detail-color-white);
+}
+
+.trainers__card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.trainers__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(80%);
+}
+.trainers__name {
+  align-self: flex-end;
+  margin-left: 1.375rem;
+  color: var(--title-color-alt);
+  z-index: 1;
+}
+
+.stacked {
+  display: grid;
+}
+.stacked > * {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.contact {
+  padding: 4rem 0;
+}
+.contact__content {
+  text-align: center;
+}
+.contact__content h2 {
+  margin-bottom: 0;
 }
 
 .section {
@@ -424,4 +458,33 @@ iframe:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+  background: var(--bg-color-alt);
+  color: var(--body-color-alt);
+}
+.footer__description p {
+  padding-top: 1.5rem;
+  margin-bottom: 0;
+  color: var(--footer-grey);
+}
+.footer__menu h4 {
+  margin-bottom: 0.5rem;
+}
+.footer__menu a {
+  color: var(--body-color-alt);
+}
+.footer__line {
+  height: 1px;
+  width: 100%;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  background-color: rgba(92, 92, 92, 0.4);
+}
+.footer__bottom {
+  color: var(--footer-grey);
+}
+.footer__bottom a {
+  color: var(--body-color-alt);
 }/*# sourceMappingURL=main.css.map */

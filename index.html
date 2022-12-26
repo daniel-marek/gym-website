@@ -31,7 +31,7 @@
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item"><a href="#uvod" class="nav__link">Úvod</a></li>
-          <li class="nav__item"><a href="#treneri" class="nav__link">Trenéři</a></li>
+          <li class="nav__item"><a href="#osobni-treneri" class="nav__link">Trenéři</a></li>
           <li class="nav__item"><a href="#lokalita" class="nav__link">Lokalita</a></li>
           <li class="nav__item"><a href="#prostory" class="nav__link">Prostory</a></li>
           <li class="nav__item"><a href="#cenik" class="nav__link">Ceník</a></li>
@@ -51,7 +51,7 @@
 
     <!-- ========== HOME ========== -->
 
-    <section class="home" id="home">
+    <section class="home" id="uvod">
       <video class="home__video" src="video/gym-git.mp4" muted autoplay></video>
       <div class="overlay"></div>
       <div class="home__content container">
@@ -64,13 +64,13 @@
     <!-- ========== BUTTONS ========== -->
 
     <section class="buttons container">
-      <a href="#treneri">
+      <a href="#osobni-treneri">
         <i class="fa-solid fa-stopwatch"></i> <p>Osobní trénink</p>
       </a>
       <a href="#cenik">
         <i class="fa-solid fa-tag"></i> <p>Ceník</p>
       </a>
-      <a href="#cenik">
+      <a href="#lokalita">
         <i class="fa-solid fa-clock"></i> <p>Otevírací doba</p>
       </a>                   
     </section>
@@ -118,7 +118,7 @@
 
     <!-- ========== LOCATIONS ========== -->
 
-    <section class="location section">
+    <section class="location section" id="lokalita">
       <div class="location__container container grid">
         <div class="section__data location__data">
           <img src="img/logo-bile.svg" alt="logo">
@@ -157,7 +157,7 @@
 
     <!-- ========== SPACE ========== -->
 
-    <section class="space">
+    <section class="space section" id="prostory">
       <div class="section__data container">
         <h2>Prostory</h2>
         <p>Na ploše o výměře 1000 m² najdete zónu s běžeckými pásy a silovou zónu s více než 50 stroji určenými ke cvičení jak s vlastní vahou, tak i se závažími. Samozřejmostí jsou všechny typy tlakových a tahových strojů vyvinutých v souladu s biomechanikou lidského těla. V silové zóně můžete využít jednoruční činky od 2 do 50 kilogramů, olympijské tyče, hex bar, axle bar, safety squat bar, dřepovací klec, benchpress a lavice s nastavitelným úhlem opěradla. Celkové vybavení tvoří více než 50 strojů na cvičení od značek Technogym, Stanmark, Stronggear a více než 15 strojů pro kardio.</p>
@@ -188,7 +188,7 @@
 
     <!-- ========== PRICING ========== -->
 
-    <section class="pricing">
+    <section class="pricing" id="cenik">
       <div class="container section grid">
         <div class="pricing__data section__data">
           <h2>Ceník</h2>
@@ -279,17 +279,98 @@
                 <p>250,- / osoba</p>
               </li>
             </ul>
-            
           </article>
-
-
          </div>
       </div>
 
 
     </section>
+
+    <section class="trainers section" id="osobni-treneri">
+      <div class="trainers__container container grid">
+        <div class="section__data">
+          <h2>Vyberte si z našich trenérů</h2>
+          <p>Náš personál je týmem fitness nadšenců, kteří se neustále průběžně vzdělávají. O cvičení a věcech souvisejících vědí první poslední a s úsměvem vás seznámí se vším, co vás zajímá. V rámci individuálního osobního tréninku zhodnotí vaše silné a slabé stránky, zvolí cviky na míru a poskytnou tolik potřebnou motivaci. Samozřejmostí je, že naši trenéři propojují své služby sestavení tréninkového plánu také s doporučením vhodného jídelníčku.</p>
+        </div>
+        <div class="trainers__content grid">
+          <article class="trainers__card stacked">
+            <img class="trainers__img" src="img/jiri-dejmal.jpg" alt="jiří dejmal">
+            <h3 class="trainers__name">Jiří Dejmal</h3>
+          </article>
+          <article class="trainers__card stacked">
+            <img class="trainers__img" src="img/veronika-markova.jpg" alt="veronika marková">
+            <h3 class="trainers__name">Veronika Marková</h3>
+          </article>
+          <article class="trainers__card stacked">
+            <img class="trainers__img" src="img/pavlina-zaluzanska.jpg" alt="">
+            <h3 class="trainers__name">Pavlína Zalužanská</h3>
+          </article>
+          <article class="trainers__card stacked">
+            <img class="trainers__img" src="img/otakar-sila.jpg" alt="">
+            <h3 class="trainers__name">Otakar Šíla</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact container" id="kontakt">
+      <div class="contact__content">
+        <h4>Máte nějaký dotaz?</h4>
+        <h2>info@fitnesskh.cz</h2>
+        <h2>+420 721 124 181</h2>
+      </div>
+    </section>
       
   </main>
+
+  <footer class="footer">
+    <div class="section container ">
+      <div class="grid">
+        <div class="footer__description">
+          <a href="#">
+            <img src="img/logo-bile.svg" alt="logo">
+          </a>
+          <p>Budeme se těšit na vaši návštěvu. Své služby rádi poskytujeme co nejširšímu spektru klientů, protože zdravý životní styl je zkrátka naší vášní. Vítáme začátečníky i pokročilé - neváhejte udělat krok k lepší kondici již dnes!
+          </p>
+        </div>
+        <div class="footer__menu">
+          <ul>
+            <h4>Pro zákazníky</h4>
+            <li><a href="#">Služby</a></li>
+            <li><a href="#">Ceník</a></li>
+            <li><a href="#">Osobní trenéři</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu">
+          <ul>
+            <h4>Fitness Centrum</h4>
+            <li><a href="#">O nás</a></li>
+            <li><a href="#">Adresa a otevírací doba</a></li>
+            <li><a href="#">Prostory</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Pobočka Čáslav</a></li>
+          </ul>
+        </div>
+        <div class="footer__menu">
+          <ul>
+            <h4>Sledujte nás</h4>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__line"></div>
+      <div class="footer__bottom">
+        <ul>
+          <li>Máte dotaz? <a href="#">+420 721 124 181</a></li>
+          <li>&copy <span id="currentYear">2020</span> Fitness Centrum Kutná Hora</li>
+          <li>Created by <a href="https://www.lajkr.cz">LAJKR</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

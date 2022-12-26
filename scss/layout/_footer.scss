@@ -1,0 +1,32 @@
+.footer {
+  background: var(--bg-color-alt);
+  color: var(--body-color-alt);
+  &__description {
+    p {
+      padding-top: 1.5rem;
+      margin-bottom: 0;
+      color: var(--footer-grey);
+    }
+  }
+  &__menu {
+    h4 {
+      margin-bottom: .5rem;
+    }
+    a {
+      color: var(--body-color-alt);
+    }
+  }
+  &__line {
+    height: 1px;
+    width: 100%;
+    margin-top: .750rem;
+    margin-bottom: .750rem;
+    background-color: rgba($color: #5c5c5c, $alpha: 0.4);
+  }
+  &__bottom {
+    color: var(--footer-grey);
+    a {
+      color: var(--body-color-alt);
+    }
+  }
+}

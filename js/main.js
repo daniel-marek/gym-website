@@ -66,3 +66,8 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-btn-prev",
   },
 });
+
+/* =========== COPYRIGHT YEAR ========== */
+const yearSpan = document.querySelector("#currentYear");
+const currentYear = new Date();
+yearSpan.innerText = currentYear.getFullYear();
