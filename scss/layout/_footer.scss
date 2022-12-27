@@ -1,6 +1,9 @@
 .footer {
   background: var(--bg-color-alt);
   color: var(--body-color-alt);
+  a:hover {
+    text-decoration: underline;
+  }
   &__description {
     p {
       padding-top: 1.5rem;

@@ -395,7 +395,10 @@ iframe:hover {
   padding: 4rem 0;
 }
 .contact__content {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 .contact__content h4 {
   margin-bottom: 0;
@@ -405,10 +408,25 @@ iframe:hover {
   display: grid;
   gap: 0.6rem;
 }
-.contact__info a {
+.contact__link {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--body-color);
+}
+.contact__link::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background-color: black;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.contact__link:hover::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  display: block;
 }
 
 .section {
@@ -538,6 +556,9 @@ iframe:hover {
 .footer {
   background: var(--bg-color-alt);
   color: var(--body-color-alt);
+}
+.footer a:hover {
+  text-decoration: underline;
 }
 .footer__description p {
   padding-top: 1.5rem;
