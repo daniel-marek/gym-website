@@ -355,6 +355,9 @@ iframe:hover {
 .trainers {
   padding-bottom: 0 !important;
 }
+.trainers__data {
+  text-align: center !important;
+}
 .trainers__bg {
   background: var(--bg-color-alt);
   padding: 0 1.5rem 4rem 1.5rem;
@@ -396,6 +399,7 @@ iframe:hover {
 }
 .contact__content h2 {
   margin-bottom: 0;
+  color: var(--body-color);
 }
 
 .section {

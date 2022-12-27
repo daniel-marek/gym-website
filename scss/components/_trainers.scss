@@ -2,6 +2,9 @@
 
 .trainers {
   padding-bottom: 0 !important;
+  &__data {
+    text-align: center !important;
+  }
   &__bg {
     background: var(--bg-color-alt);
     padding: 0 1.5rem 4rem 1.5rem;
