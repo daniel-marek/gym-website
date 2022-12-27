@@ -100,7 +100,7 @@ a, a:visited, a:active {
 }
 
 td {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .buttons {
@@ -298,10 +298,15 @@ iframe:hover {
 .table__subtitle {
   font-size: 1.25rem !important;
 }
-.table th, .table td {
+.table th {
   text-align: left;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+.table td {
+  text-align: left;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
 }
 
 .gallery {
