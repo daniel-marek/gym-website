@@ -286,6 +286,9 @@ iframe:hover {
   font-size: 0.875rem;
   font-weight: 400;
 }
+.table--pricing td:first-child {
+  padding-right: 10px;
+}
 .table--pricing td:last-child {
   text-align: right;
 }

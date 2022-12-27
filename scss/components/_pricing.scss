@@ -64,6 +64,9 @@
       font-size: rem(14);
       font-weight: 400;
     }
+    & td:first-child {
+      padding-right: 10px;
+    }
     & td:last-child {
       text-align: right;
     }
