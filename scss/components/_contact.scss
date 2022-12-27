@@ -2,10 +2,18 @@
   padding: 4rem 0;
   &__content {
     text-align: center;
-    h2 {
+    h4 {
       margin-bottom: 0;
+      font-weight: 400;
+    }
+  }
+  &__info {
+    display: grid;
+    gap: .6rem;
+    a {
+      font-size: 1.5rem;
+      font-weight: 700;
       color: var(--body-color);
     }
-
   }
 }
