@@ -1,6 +1,15 @@
 @use "../abstracts/" as *;
 
 .trainers {
+  padding-bottom: 0 !important;
+  &__bg {
+    background: var(--bg-color-alt);
+    padding: 0 1.5rem 4rem 1.5rem;
+    margin-top: 10rem;
+  }
+  &__content {
+    margin-top: -10rem;
+  }
   &__card {
     border-radius: $border-radius;
     overflow: hidden;
