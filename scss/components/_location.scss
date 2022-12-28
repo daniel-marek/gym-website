@@ -5,13 +5,16 @@
   padding-bottom: 4rem;
   &__container {
     color: var(--body-color-alt);
+    @include breakpoint(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   &__data {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     & img {
-      max-width: 50%;
+      max-width: rem(230);
     }
   }
   &__description p {

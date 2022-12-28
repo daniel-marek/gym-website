@@ -17,6 +17,8 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
   <title>Fitness centrum Kutná Hora</title>
 </head>
 <body>
@@ -56,30 +58,34 @@
       <div class="overlay"></div>
       <div class="home__content container">
         <h1 class="home__title">Vítá vás Fitness Centrum Kutná Hora</h1>
-        <p class="home__description" id="mobile">Fitness centrum, které splní i ty nejnáročnější požadavky.</p>
-        <p class="home__description" id="desktop">Fitness centrum, které splní i ty nejnáročnější požadavky. Ať už jste rekreační sportovec nebo fitness profesionál, u nás najdete vše, co potřebujete. Nové moderní stroje k procvičení celého těla a samostatná kardio zóna - veškeré služby na jednom místě.</p>
+        <p class="home__description home__description--small " id="mobile">
+          Fitness centrum, které splní i ty nejnáročnější požadavky.</p>
+        <p class="home__description home__description--medium">
+          Fitness centrum, které splní i ty nejnáročnější požadavky. Ať už jste rekreační sportovec nebo fitness profesionál, u nás najdete vše, co potřebujete. Nové moderní stroje k procvičení celého těla a samostatná kardio zóna - veškeré služby na jednom místě.</p>
       </div>
     </section>
 
     <!-- ========== BUTTONS ========== -->
 
-    <section class="buttons container">
-      <a href="#osobni-treneri">
-        <i class="fa-solid fa-stopwatch"></i> <p>Osobní trénink</p>
-      </a>
-      <a href="#cenik">
-        <i class="fa-solid fa-tag"></i> <p>Ceník</p>
-      </a>
-      <a href="#lokalita">
-        <i class="fa-solid fa-clock"></i> <p>Otevírací doba</p>
-      </a>                   
+    <section class="button">
+      <div class="button__items">
+        <a class="element-divider" href="#osobni-treneri">
+          <i class="fa-solid fa-stopwatch"></i> <p>Osobní trénink</p>
+        </a>
+        <a class="element-divider" href="#cenik">
+          <i class="fa-solid fa-tag"></i> <p>Ceník</p>
+        </a>
+        <a href="#lokalita">
+          <i class="fa-solid fa-clock"></i> <p>Otevírací doba</p>
+        </a>                   
+      </div>
     </section>
 
     <!-- ========== ABOUT ========== -->
 
-    <section class="about section">
+    <section class="about">
       <div class="about__container grid">
-        <div class="section__data container">
+        <div class="about__data container">
           <h2>Fitness Kutná Hora</h2>
           <p>Naše fitness centrum naleznete ve velkorysých prostorách bývalé pekárny. Zacvičit si můžete na kvalitních strojích značky Technogym v čistém a moderním prostředí. Je pro nás důležité, abyste se u nás cítili příjemně a uvolněně, a vítáme příznivce cvičení na všech úrovních výkonnosti. Bude vám k dispozici ochotný a podrobně proškolený personál, který pomůže s jakýmkoliv požadavkem. V naší posilovně se vždy setkáte s přátelskou komunitou, které záleží především na radosti z pohybu a zdravém životním stylu – stejně jako vám.</p>
           <p>Otevírací doba od 6:00 do 21:30 vám umožní cvičit kdykoli chcete a můžete. Pravidelné návštěvy našeho fitness centra budou příjemné i pro vaši peněženku – nabízíme možnost zakoupení výhodných dlouhodobých permanentek a studentské vstupné.</p>
@@ -96,7 +102,7 @@
     <section class="service section container" id="sluzby">
       <div class="service__container grid">
         <div class="section__data-center">
-          <h2>Už žádné výmluvy, u nás máte všechno na jednom místě</h2>
+          <h2 class="service__title">Už žádné výmluvy, u nás máte všechno na jednom místě</h2>
           <p>Nejsme jen jakousi půjčovnou cvičebního nářadí a tělocvičnou – nabízíme komplexní služby. Podrobný tréninkový plán na míru, sestavení jídelníčku na základě analýzy těla a prodej výživových doplňků přímo na baru. Pro individuální tréninkové lekce si můžete objednat osobního trenéra, který se intenzivně zaměří přímo na vaše potřeby.</p>
         </div>
         <div class="service__offer">
@@ -350,7 +356,7 @@
 
   <footer class="footer">
     <div class="section container ">
-      <div class="grid">
+      <div class="footer__content">
         <div class="footer__description">
           <a href="#">
             <img src="img/logo-bile.svg" alt="logo">
@@ -358,30 +364,32 @@
           <p>Budeme se těšit na vaši návštěvu. Své služby rádi poskytujeme co nejširšímu spektru klientů, protože zdravý životní styl je zkrátka naší vášní. Vítáme začátečníky i pokročilé - neváhejte udělat krok k lepší kondici již dnes!
           </p>
         </div>
-        <div class="footer__menu">
-          <ul>
-            <h4>Pro zákazníky</h4>
-            <li><a href="#sluzby">Služby</a></li>
-            <li><a href="#cenik">Ceník</a></li>
-            <li><a href="#osobni-treneri">Osobní trenéři</a></li>
-          </ul>
-        </div>
-        <div class="footer__menu">
-          <ul>
-            <h4>Fitness Centrum</h4>
-            <li><a href="#o-nas">O nás</a></li>
-            <li><a href="#lokalita">Adresa a otevírací doba</a></li>
-            <li><a href="#prostory">Prostory</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-            <li><a href="#">Pobočka Čáslav</a></li>
-          </ul>
-        </div>
-        <div class="footer__menu">
-          <ul>
-            <h4>Sledujte nás</h4>
-            <li><a href="https://www.facebook.com/fitnesskh.cz" target="_blank">Facebook</a></li>
-            <li><a href="https://www.instagram.com/fitkokh" target="_blank">Instagram</a></li>
-          </ul>
+        <div class="footer__columns">
+          <div class="footer__menu">
+            <ul>
+              <h4>Pro zákazníky</h4>
+              <li><a href="#sluzby">Služby</a></li>
+              <li><a href="#cenik">Ceník</a></li>
+              <li><a href="#osobni-treneri">Osobní trenéři</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <ul>
+              <h4>Fitness Centrum</h4>
+              <li><a href="#o-nas">O nás</a></li>
+              <li><a href="#lokalita">Adresa a otevírací doba</a></li>
+              <li><a href="#prostory">Prostory</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+              <li><a href="#">Pobočka Čáslav</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <ul>
+              <h4>Sledujte nás</h4>
+              <li><a href="https://www.facebook.com/fitnesskh.cz" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com/fitkokh" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer__line"></div>

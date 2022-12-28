@@ -19,19 +19,17 @@
   align-items: center;
 
   &__menu {
-    @media screen and (max-width: 767px){
-      position: fixed;
-      background-color: var(--bg-color);
-      padding: 2.5rem 0;
-      width: 100%;
-      top: -100%; //5rem when click
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      transition: .4s;
-      border-radius: 0 0 $border-radius $border-radius;
-      z-index: 11;
-    }
+    position: fixed;
+    background-color: var(--bg-color);
+    padding: 2.5rem 0;
+    width: 100%;
+    top: -100%; //5rem when click
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: .4s;
+    border-radius: 0 0 $border-radius $border-radius;
+    z-index: 11;
   }
   &__list {
     display: flex;

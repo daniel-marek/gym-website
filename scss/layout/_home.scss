@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .home {
   position: relative;
   width: 100%;
@@ -6,6 +8,9 @@
   &__content {
     position: absolute;
     bottom: 6rem;
+    @include breakpoint(medium) {
+      max-width: 32rem;
+    }
   }
 
   &__title {
@@ -14,10 +19,19 @@
 
   &__description {
     color: var(--body-color-alt);
+    &--medium {
+      display: none;
+    }
+    @include breakpoint(medium) {
+      &--small {
+        display: none;
+      }
+      &--medium {
+        display: inline;
+      }
+    }
+    
   }
-}
-#desktop {
-  display: none;
 }
 
 .home__video {

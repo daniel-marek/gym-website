@@ -69,10 +69,7 @@ h4 {
   font-size: 1.25rem;
 }
 
-@media (min-width: 43.75em) {
-  h1 {
-    font-size: 2.375rem;
-  }
+@media (min-width: 48em) {
   h3 {
     font-size: 1.5rem;
   }
@@ -102,13 +99,23 @@ a, a:visited, a:active {
 td {
   font-size: 1rem;
 }
+@media (min-width: 48em) {
+  td {
+    font-size: 1.125rem;
+  }
+}
 
-.buttons {
+.button {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+}
+
+.button__items {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 10px;
+  max-width: 16.875rem;
   margin: auto;
   border-radius: 10px;
   background-color: white;
@@ -117,7 +124,14 @@ td {
   box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.2);
   margin-bottom: -5rem;
 }
-.buttons a {
+@media (min-width: 40em) {
+  .button__items {
+    flex-direction: row;
+    max-width: 48rem;
+    transform: translateY(-50%);
+  }
+}
+.button__items a {
   display: flex;
   width: 100%;
   align-items: center;
@@ -127,27 +141,78 @@ td {
   color: var(--body-color);
   transition: 0.5s;
 }
-.buttons a:hover {
+.button__items a:hover {
   background: var(--bg-color-black);
   color: var(--body-color-alt);
 }
-.buttons a p {
+.button__items a p {
   padding-left: 1rem;
   margin-bottom: 0;
   line-height: 0;
 }
 
-.about {
-  padding-bottom: 0 !important;
+.element-divider {
+  position: relative;
 }
 
+.element-divider::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 25%;
+  height: 1px;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  background-color: rgba(221, 221, 221, 0.808);
+}
+@media (min-width: 40em) {
+  .element-divider::after {
+    width: 1px;
+    height: 50%;
+    left: 100%;
+    top: 50%;
+  }
+}
+
+.about {
+  padding-top: 4rem;
+  padding-bottom: 0;
+}
+@media (min-width: 40em) {
+  .about {
+    padding-top: 6rem;
+  }
+}
+@media (min-width: 48em) {
+  .about {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (min-width: 48em) {
+  .about__data {
+    order: 1;
+  }
+}
+
+@media (min-width: 48em) {
+  .service__title {
+    max-width: 500px;
+    margin-inline: auto;
+  }
+}
 .service__offer {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
 }
-
+@media (min-width: 48em) {
+  .service__offer {
+    gap: 2rem;
+  }
+}
 .service__element {
   display: flex;
   flex-direction: column;
@@ -157,11 +222,15 @@ td {
   box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
+@media (min-width: 48em) {
+  .service__element {
+    max-width: 400px;
+  }
+}
 .service__element h4 {
   margin-top: 0.5rem;
   margin-bottom: 0.7rem;
 }
-
 .service__filter {
   filter: brightness(0.8);
 }
@@ -173,13 +242,18 @@ td {
 .location__container {
   color: var(--body-color-alt);
 }
+@media (min-width: 48em) {
+  .location__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .location__data {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 .location__data img {
-  max-width: 50%;
+  max-width: 14.375rem;
 }
 .location__description p {
   margin-bottom: 0;
@@ -316,16 +390,33 @@ iframe:hover {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 48em) {
+  .gallery {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background: linear-gradient(to bottom, var(--bg-color) 0%, var(--bg-color) 50%, var(--bg-color-alt) 50%, var(--bg-color-alt) 100%);
+  }
+}
 
 .swiper {
   width: 100%;
-  height: 400px;
+  height: 25rem;
+}
+@media (min-width: 48em) {
+  .swiper {
+    height: 40rem;
+  }
 }
 
 .swiper-slide {
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
+}
+@media (min-width: 48em) {
+  .swiper-slide {
+    border-radius: 10px;
+  }
 }
 
 .swiper-btn-bg {
@@ -365,6 +456,11 @@ iframe:hover {
 }
 .trainers__content {
   margin-top: -10rem;
+}
+@media (min-width: 48em) {
+  .trainers__content {
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  }
 }
 .trainers__card {
   border-radius: 10px;
@@ -468,20 +564,18 @@ iframe:hover {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 767px) {
-  .nav__menu {
-    position: fixed;
-    background-color: var(--bg-color);
-    padding: 2.5rem 0;
-    width: 100%;
-    top: -100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    transition: 0.4s;
-    border-radius: 0 0 10px 10px;
-    z-index: 11;
-  }
+.nav__menu {
+  position: fixed;
+  background-color: var(--bg-color);
+  padding: 2.5rem 0;
+  width: 100%;
+  top: -100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.4s;
+  border-radius: 0 0 10px 10px;
+  z-index: 11;
 }
 .nav__list {
   display: flex;
@@ -523,15 +617,27 @@ iframe:hover {
   position: absolute;
   bottom: 6rem;
 }
+@media (min-width: 48em) {
+  .home__content {
+    max-width: 32rem;
+  }
+}
 .home__title {
   color: var(--title-color-alt);
 }
 .home__description {
   color: var(--body-color-alt);
 }
-
-#desktop {
+.home__description--medium {
   display: none;
+}
+@media (min-width: 48em) {
+  .home__description--small {
+    display: none;
+  }
+  .home__description--medium {
+    display: inline;
+  }
 }
 
 .home__video {
@@ -557,8 +663,27 @@ iframe:hover {
   background: var(--bg-color-alt);
   color: var(--body-color-alt);
 }
+.footer .section {
+  padding-bottom: 2rem;
+}
 .footer a:hover {
   text-decoration: underline;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer__columns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (min-width: 48em) {
+  .footer__columns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .footer__description p {
   padding-top: 1.5rem;
@@ -566,6 +691,7 @@ iframe:hover {
   color: var(--footer-grey);
 }
 .footer__menu h4 {
+  font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
 .footer__menu a {
@@ -574,11 +700,13 @@ iframe:hover {
 .footer__line {
   height: 1px;
   width: 100%;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   background-color: rgba(92, 92, 92, 0.4);
 }
 .footer__bottom {
+  display: flex;
+  flex-direction: column;
   color: var(--footer-grey);
 }
 .footer__bottom a {

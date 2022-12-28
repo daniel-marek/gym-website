@@ -1,3 +1,18 @@
+@use "../abstracts/" as *;
+
 .about {
-  padding-bottom: 0 !important;
+  padding-top: 4rem;
+  padding-bottom: 0;
+  @media (min-width: em(640)) {
+    padding-top: 6rem;
+  }
+  @include breakpoint(medium) {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+  }
+  &__data {
+    @include breakpoint(medium) {
+      order: 1;
+    }
+  }
 }

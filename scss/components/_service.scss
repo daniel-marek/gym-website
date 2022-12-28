@@ -1,26 +1,39 @@
 @use "../abstracts/" as *;
 
-.service__offer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-}
-
-.service__element {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 270px;
-  border-radius: 10px;
-  box-shadow: $box-shadow;
-  overflow: hidden;
-  & h4 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.7rem;
+.service {
+  &__title {
+    @include breakpoint(medium) {
+      max-width: 500px;
+      margin-inline: auto;
+    }
+  }
+  &__offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    @include breakpoint(medium) {
+      gap: 2rem;
+    }
+  }
+  &__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 270px;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    @include breakpoint(medium) {
+      max-width: 400px;
+    }
+    & h4 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.7rem;
+    }
+  }
+  &__filter {
+    filter: brightness(0.8);
   }
 }
 
-.service__filter {
-  filter: brightness(0.8);
-}

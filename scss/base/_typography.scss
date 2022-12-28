@@ -22,9 +22,6 @@ h4 {
 }
 
 @include a.breakpoint(medium) {
-  h1 {
-    font-size: a.rem(38);
-  }
   h3 {
     font-size: a.rem(24);
   }
@@ -55,5 +52,8 @@ a, a:visited, a:active {
 
 td {
   font-size: a.rem(16);
+  @include a.breakpoint(medium) {
+    font-size: a.rem(18);
+  }
 }
 

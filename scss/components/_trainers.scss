@@ -12,6 +12,9 @@
   }
   &__content {
     margin-top: -10rem;
+    @include breakpoint(medium) {
+      grid-template: repeat(2, 1fr) / repeat(2,1fr);
+    }
   }
   &__card {
     border-radius: $border-radius;
