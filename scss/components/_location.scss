@@ -1,12 +1,16 @@
 @use "../abstracts/" as *;
 
 .location {
+  padding: 4rem 0 4rem;
   background: var(--bg-color-alt);
-  padding-bottom: 4rem;
+  @include breakpoint(large) {
+    padding: 7rem 0 7rem;
+  }
   &__container {
     color: var(--body-color-alt);
     @include breakpoint(medium) {
       grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
     }
   }
   &__data {
@@ -24,6 +28,15 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    @include breakpoint(large) {
+      flex-direction: row;
+      gap: 5rem;
+    }
+  }
+  & .grid {
+    @include breakpoint(large) {
+      gap: 4rem;
+    }
   }  
 }
 
@@ -55,4 +68,20 @@ iframe {
   &:hover {
     filter: grayscale(0%);
   }
+  @include breakpoint(large) {
+    height: 100%;
+  }
+}
+.location__map {
+  position: relative;
+}
+.circle-map {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  background: #E52428;
+  border-radius: 100%;
+  filter: blur(5rem);
 }

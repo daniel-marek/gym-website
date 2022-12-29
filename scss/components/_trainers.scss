@@ -1,9 +1,18 @@
 @use "../abstracts/" as *;
 
 .trainers {
-  padding-bottom: 0 !important;
+  padding: 4rem 0 0;
+  position: relative;
+  @include breakpoint(large) {
+    padding-top: 7rem;
+  }
   &__data {
     text-align: center !important;
+  }
+  &__description {
+    @include breakpoint(large) {
+      max-width: rem(700);
+    }
   }
   &__bg {
     background: var(--bg-color-alt);
@@ -14,6 +23,12 @@
     margin-top: -10rem;
     @include breakpoint(medium) {
       grid-template: repeat(2, 1fr) / repeat(2,1fr);
+    }
+    @include breakpoint(large) {
+      max-width: rem(900);
+      margin-inline: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
   }
   &__card {
@@ -42,5 +57,18 @@
   & > * {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+  }
+}
+
+@include breakpoint(large) {
+  .circle-trainers {
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    width: 300px;
+    height: 300px;
+    background: #E52428;
+    border-radius: 100%;
+    filter: blur(10rem);
   }
 }

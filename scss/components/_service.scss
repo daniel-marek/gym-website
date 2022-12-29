@@ -2,7 +2,10 @@
 
 .service {
   padding-top: 4rem;
-  padding-bottom: 7rem;
+  padding-bottom: 4rem;
+  @include breakpoint(large) {
+    padding-bottom: 7rem;
+  }
   &__title {
     @include breakpoint(medium) {
       max-width: 500px;
