@@ -299,6 +299,7 @@ td {
 }
 
 .location {
+  overflow: hidden;
   padding: 4rem 0 4rem;
   background: var(--bg-color-alt);
 }
@@ -384,6 +385,7 @@ iframe:hover {
 }
 
 .circle-map {
+  display: block;
   position: absolute;
   bottom: -10%;
   right: -10%;
