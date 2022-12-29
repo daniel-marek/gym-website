@@ -28,7 +28,11 @@ h4 {
   h4 {
     font-size: a.rem(24);
   }
-
+}
+@include a.breakpoint(large) {
+  h1 {
+    font-size: a.rem(36);
+  }
 }
 
 p {

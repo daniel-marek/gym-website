@@ -10,9 +10,32 @@
     padding-top: 7rem;
     padding-bottom: 2rem;
   }
+  @include breakpoint(large) {
+    padding-top: 10rem;
+    & .container {
+      padding-right: 7rem;
+    }
+  }
   &__data {
     @include breakpoint(medium) {
       order: 1;
+    }
+  }
+  &__container {
+    @include breakpoint(large) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: rem(1275);
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  &__image {
+    @include breakpoint(large) {
+      img {
+        border-radius: $border-radius;
+      }
+      
     }
   }
 }
