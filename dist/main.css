@@ -849,6 +849,7 @@ iframe:hover {
 .home__content {
   position: absolute;
   bottom: 6rem;
+  padding-right: 1.5rem;
 }
 @media (min-width: 48em) {
   .home__content {
