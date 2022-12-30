@@ -15,9 +15,11 @@
     padding-right: 1.5rem;
     @include breakpoint(medium) {
       max-width: 32rem;
+      padding-right: 0;
     }
     @include breakpoint(large) {
       max-width: 38rem;
+      padding-right: 0;
     }
   }
 

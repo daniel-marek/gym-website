@@ -854,11 +854,13 @@ iframe:hover {
 @media (min-width: 48em) {
   .home__content {
     max-width: 32rem;
+    padding-right: 0;
   }
 }
 @media (min-width: 64em) {
   .home__content {
     max-width: 38rem;
+    padding-right: 0;
   }
 }
 .home__title {
