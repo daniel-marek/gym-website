@@ -36,7 +36,7 @@ body {
   color: var(--body-color);
 }
 
-img {
+img, video {
   max-width: 100%;
   height: auto;
 }
@@ -745,6 +745,7 @@ iframe:hover {
   left: 0;
   z-index: 100;
   border-radius: 0 0 10px 10px;
+  box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* ========== NAVIGATION =========== */
@@ -835,7 +836,6 @@ iframe:hover {
   display: block;
 }
 
-/* Change background header */
 .home {
   position: relative;
   width: 100%;
@@ -843,7 +843,7 @@ iframe:hover {
 }
 @media (min-width: 64em) {
   .home {
-    height: min(100vh - 100px, 700px);
+    height: min(100vh - 100px, 740px);
   }
 }
 .home__content {
@@ -894,7 +894,7 @@ iframe:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .footer {

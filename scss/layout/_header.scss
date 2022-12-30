@@ -9,6 +9,7 @@
   left: 0;
   z-index: 100;
   border-radius: 0 0 $border-radius $border-radius;
+  box-shadow: $box-shadow;
 }
 
 /* ========== NAVIGATION =========== */
@@ -66,10 +67,6 @@
     background-color: black;
     display: block;
   }
-
-
-
-
   &__toggle {
     color: var(--body-color);
   }
@@ -99,9 +96,3 @@
 .show-close {
   display: block;
 }
-
-
-
-
-
-/* Change background header */
