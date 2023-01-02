@@ -136,7 +136,7 @@
   transform: scaleX(1);
 }
 
-@media (hover) {
+// @media (hover) {
   .card-content {
     transform: translateY(75%);
     transition: transform .5s ease;
@@ -165,7 +165,7 @@
   .card-title::after {
     transform: scaleX(0);
   }
-}
+// }
 
 .card__accordion {
   display: flex;
