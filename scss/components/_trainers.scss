@@ -73,9 +73,18 @@
   }
 }
 
+.jiri-dejmal {
+  background-image: url(../img/jiri-dejmal.jpg);
+}
+
+.veronika-markova {
+  background-image: url(../img/veronika-markova.jpg);
+}
+
+
+
 .card {
   color: var(--body-color-alt);
-  background-image: url(../img/otakar-sila.jpg);
   background-size: cover;
   padding: 10rem 0 0;
   border-radius: $border-radius;
@@ -92,7 +101,7 @@
   padding: var(--padding);
   background: linear-gradient(
     hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 0.7) 20%,
     hsl(0 0% 0% / 1)
   );
   
@@ -108,7 +117,7 @@
 .card-title::after {
   content: "";
   position: absolute;
-  height: 4px;
+  height: 1px;
   left: calc(var(--padding) * -1);
   bottom: -2px;
   width: calc(100% + var(--padding));
@@ -151,4 +160,22 @@
   .card-title::after {
     transform: scaleX(0);
   }
+}
+
+.card__accordion {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card__link {
+  color: var(--body-color-alt);
+  font-size: rem(18);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.card__icon {
+  font-size: rem(18);
 }
