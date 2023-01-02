@@ -81,7 +81,13 @@
   background-image: url(../img/veronika-markova.jpg);
 }
 
+.pavlina-zaluzanska {
+  background-image: url(../img/pavlina-zaluzanska.jpg);
+}
 
+.otakar-sila {
+  background-image: url(../img/otakar-sila.jpg);
+}
 
 .card {
   color: var(--body-color-alt);
@@ -106,8 +112,6 @@
   );
   
 }
-
-
 
 .card-title {
   position: relative;
@@ -136,6 +140,7 @@
   .card-content {
     transform: translateY(75%);
     transition: transform .5s ease;
+    height: 100%;
   }
   .card:hover .card-content, .card:focus-within .card-content {
     transform: translateY(0);
