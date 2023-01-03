@@ -16,22 +16,76 @@ body {
   color: #fff;
 }
 
+h1 {
+  font-size: 1.75rem;
+}
+
+h1, h3 {
+  margin: 3rem 0;
+}
+
 .home {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .home img {
-  max-width: 100%;
+  width: 250px;
   height: auto;
 }
 
 .home__button {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
 }
+
+.button {
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #fff;
+  padding: 15px 25px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  transition: .5s ease;
+  width: 70%;
+}
+
+.kutna-hora:hover {
+  border: 2px solid #E52428;
+  background-color: #E52428;
+}
+.caslav:hover {
+  border: 2px solid #99C32E;
+  background-color: #99C32E;
+  color: #101010;
+}
+
+.circle {
+  position: absolute;  
+  height: 300px;
+  border-radius: 100%;
+  filter: blur(10rem);
+  z-index: -1;
+}
+
+.circle--red {
+  background: #E52428;
+  top: 15%;
+  left: -150px;
+  width: 300px;
+}
+.circle--green {
+  background: #99C32E;
+  bottom: 15%;
+  right: -150px;
+  width: 300px;
+}
+
