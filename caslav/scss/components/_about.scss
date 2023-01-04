@@ -1,0 +1,57 @@
+@use "../abstracts/" as *;
+
+.about {
+  padding-top: 4rem;
+  padding-bottom: 0;
+  @media (min-width: em(640)) {
+    padding-top: 6rem;
+  }
+  @include breakpoint(medium) {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+  }
+  @include breakpoint(large) {
+    padding-top: 10rem;
+    & .container {
+      padding-right: 7rem;
+    }
+  }
+  &__data {
+    @include breakpoint(medium) {
+      order: 1;
+    }
+  }
+  &__container {
+    @include breakpoint(large) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: rem(1275);
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  &__image {
+    position: relative;
+    img {
+      @include breakpoint(large) {
+        position: absolute;
+        border-radius: $border-radius;
+    }
+    }
+    
+  }
+}
+
+@include breakpoint(large) {
+  .circle-about {
+    position: absolute;
+    bottom: 10%;
+    left: -10%;
+    width: 300px;
+    height: 300px;
+    background: var(--detail-color-circle);
+    border-radius: 100%;
+    filter: blur(10rem);
+  }
+}
+

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ========== GOOGLE FONTS ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- ========== FONT AWESOME ========== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ========== CSS ========== -->
+  <link rel="stylesheet" href="dist/main.css">
+  <!-- ========== SWIPER ========== -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+  <title>Fitness centrum Čáslav</title>
+</head>
+<body>
+
+   <!-- ========== HEADER ========== -->
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="img/logo-cerne.svg" alt="logo">
+      </a>      
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="http://soner.cz/fitness/" class="nav__link" target="_blank">Skupinové lekce</a></li>
+          <li class="nav__item"><a href="https://unibook.cz/masazefitness" class="nav__link" target="_blank">Masáže</a></li>
+          <li class="nav__item"><a href="#osobni-treneri" class="nav__link">Trenéři</a></li>
+          <li class="nav__item"><a href="#lokalita" class="nav__link">Lokalita</a></li>
+          <li class="nav__item"><a href="#prostory" class="nav__link">Prostory</a></li>
+          <li class="nav__item"><a href="#cenik" class="nav__link">Ceník</a></li>
+          <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>          
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav__close" id="nav-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- ========== HOME ========== -->
+
+    <section class="home" id="uvod">
+      <video class="home__video" preload="metadata" autoplay muted playsinline loop id="video">
+        <source src="video/gym-desktop-7.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="home__content ">
+          <h1 class="home__title">Vítá vás Fitness Centrum Čáslav</h1>
+          <p class="home__description home__description--small " id="mobile">
+            Fitness centrum, které splní i ty nejnáročnější požadavky.</p>
+          <p class="home__description home__description--medium">
+            Fitness centrum, které splní i ty nejnáročnější požadavky. Ať už jste rekreační sportovec nebo fitness profesionál, u nás najdete vše, co potřebujete. Nové moderní stroje k procvičení celého těla a samostatná kardio zóna - veškeré služby na jednom místě.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BUTTONS ========== -->
+
+    <section class="button">
+      <div class="button__items">
+        <a class="element-divider" href="http://soner.cz/fitness/" target="_blank">
+          <i class="fa-solid fa-heart-pulse"></i> <p>Rezervovat lekce</p>
+        </a>
+        <a class="element-divider" href="https://unibook.cz/masazefitness" target="_blank">
+          <i class="fa-solid fa-spa"></i> <p>Rezervovat masáž</p>
+        </a>
+        <a href="#cenik">
+          <i class="fa-solid fa-tag"></i> <p>Ceník</p>
+
+        </a>                   
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+
+    <section class="about" id="o-nas">
+      <div class="about__container grid">
+        <div class="about__data container">
+          <h2>Fitness Čáslav</h2>
+          <p>Naše fitness centrum naleznete ve velkorysých prostorách bývalé pekárny. Zacvičit si můžete na kvalitních strojích značky Technogym v čistém a moderním prostředí. Je pro nás důležité, abyste se u nás cítili příjemně a uvolněně, a vítáme příznivce cvičení na všech úrovních výkonnosti. Bude vám k dispozici ochotný a podrobně proškolený personál, který pomůže s jakýmkoliv požadavkem. V naší posilovně se vždy setkáte s přátelskou komunitou, které záleží především na radosti z pohybu a zdravém životním stylu – stejně jako vám.</p>
+          <p>Otevírací doba od 6:00 do 21:30 vám umožní cvičit kdykoli chcete a můžete. Pravidelné návštěvy našeho fitness centra budou příjemné i pro vaši peněženku – nabízíme možnost zakoupení výhodných dlouhodobých permanentek a studentské vstupné.</p>
+        </div>
+
+        <div class="about__image">
+          <div class="circle-about"></div>
+          <img src="img/fitness-kutna-hora-1.jpg" alt="Fitness Centrum Kutná Hora">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICE ========== -->
+
+    <section class="service container" id="sluzby">
+      <div class="service__container grid">
+        <div class="section__data-center">
+          <h2 class="service__title">Už žádné výmluvy, u nás máte všechno na jednom místě</h2>
+          <p class="service__description">Nejsme jen jakousi půjčovnou cvičebního nářadí a tělocvičnou – nabízíme komplexní služby. Podrobný tréninkový plán na míru, sestavení jídelníčku na základě analýzy těla a prodej výživových doplňků přímo na baru. Pro individuální tréninkové lekce si můžete objednat osobního trenéra, který se intenzivně zaměří přímo na vaše potřeby.</p>
+        </div>
+        <div class="service__offer">
+          <a href="http://soner.cz/fitness/" class="service__element" target="_blank">
+            
+            <!-- <div class="service__element"> -->
+              <img class="service__filter" src="img/skupinove-lekce.jpg" alt="skupinove-lekce">
+              <h4>Skupinové lekce</h4>
+            <!-- </div> -->
+          </a>
+          <a href="https://unibook.cz/masazefitness" class="service__element" target="_blank">
+
+            <!-- <div class="service__element"> -->
+              <img class="service__filter" src="img/masaze.jpg" alt="posilovna">
+              <h4>Masáže</h4>
+            <!-- </div> -->
+          </a>
+          <div class="service__element">
+            <img class="service__filter" src="img/vyzivove-doplnky.jpg" alt="vyzivove-doplnky">
+            <h4>Výživové doplňky</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LOCATIONS ========== -->
+
+    <section class="location" id="lokalita">
+      
+      <div class="location__container container grid">
+        <div class="section__data location__data">
+          <img src="img/logo-bile.svg" alt="logo">
+          <div class="location__description">
+            <h2>Fitness Centrum - Čáslav</h2>
+            <p>Navštívit nás můžete již od brzkých ranních hodin až do večera. Posilovna se nachází na níže uvedené adrese v prostorách bývalé pekárny. Tato lokalita je velmi dobře dostupná a k dispozici pro vás je až 30 parkovacích míst.
+            </p>
+          </div>
+          <div class="location__element">
+            <div class="location__address">
+              <ul>
+                <h4 class="location__subtitle">Adresa:</h4>
+                <li>J. R. z Dubé 131</li>
+                <li>Čáslav</li>
+                <li><a class="location__link" href="https://www.google.com/maps/place/Fitness+centrum+%C4%8C%C3%A1slav/@49.9081624,15.3905691,17z/data=!3m1!4b1!4m5!3m4!1s0x470c4673a4888d17:0x467e2ce10fd23222!8m2!3d49.9081604!4d15.3918705" target="_blank">Ukázat na mapě</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="location__subtitle">Otevírací doba:</h4>
+              <div class="location__hours">
+                <ul>
+                  <li>po - pá:</li>
+                  <li>so - ne:</li>
+                </ul>
+                <ul>
+                  <li>6:00 - 21:30</li>
+                  <li>9:00 - 21:00</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location__map">
+          <div class="circle-map"></div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2569.5014544005076!2d15.390569100975151!3d49.90816244693409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c4673a4888d17%3A0x467e2ce10fd23222!2sFitness%20centrum%20%C4%8C%C3%A1slav!5e0!3m2!1scs!2sus!4v1672827132188!5m2!1scs!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SPACE ========== -->
+
+    <section class="space" id="prostory">
+      <div class="section__data container">
+        <h2>Prostory</h2>
+        <p class="space__description">Na ploše o výměře 1000 m² najdete zónu s běžeckými pásy a silovou zónu s více než 50 stroji určenými ke cvičení jak s vlastní vahou, tak i se závažími. Samozřejmostí jsou všechny typy tlakových a tahových strojů vyvinutých v souladu s biomechanikou lidského těla. V silové zóně můžete využít jednoruční činky od 2 do 50 kilogramů, olympijské tyče, hex bar, axle bar, safety squat bar, dřepovací klec, benchpress a lavice s nastavitelným úhlem opěradla. Celkové vybavení tvoří více než 50 strojů na cvičení od značek Technogym, Stanmark, Stronggear a více než 15 strojů pro kardio.</p>
+      </div>
+      </section>
+
+      <!-- ========== GALLERY ========== -->
+      <div class="gallery">
+
+      
+      <div class="gallery__container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(img/fitness-kutna-hora-1.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(img/prostory-1.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(img/prostory-2.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(img/prostory-3.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(img/prostory-4.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(img/prostory-5.jpg);"></div>
+          </div>      
+        </div>
+        <div class="swiper-btn-bg">
+          <div class="swiper-btn-prev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="swiper-btn-next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+    <!-- ========== PRICING ========== -->
+
+    <section class="pricing" id="cenik">
+      <div class="container pricing__container grid">
+        <div class="pricing__data section__data">
+          <h2>Ceník</h2>
+          <p>Studentům nabízíme zvýhodněné vstupné po předložení studentského průkazu a pravidelným návštěvníkům níže uvedené permanentky. Akceptujeme karty Multisport.
+          </p>
+        </div>
+        <div class="pricing__section">
+          <article class="pricing__list">
+            <table class="table table--pricing">
+              <tbody>
+                <tr>
+                  <th>Vstup do posilovny</th>
+                  <th>plná/studentská cena</th>
+                </tr>
+                <tr>
+                  <td>Jednorázový vstup</td>
+                  <td>125,-/100,-</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th class="table__subtitle">Permanentka vstupová</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Členství s 10 vstupy</td>
+                  <td>1050,-/900,-</td>
+                </tr>
+                <tr>
+                  <td>Členství s 20 vstupy</td>
+                  <td>1800,-/1500,-</td>
+                </tr>
+                <tr>
+                  <td>Členství s 30 vstupy</td>
+                  <td>2550,-/2200,-</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th class="table__subtitle">Permanentka časová</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Členství na 1 měsíc</td>
+                  <td>1050,-/950,-</td>
+                </tr>
+                <tr>
+                  <td>Členství na 2 měsíc</td>
+                  <td>2950,-/2550,-</td>
+                </tr>
+                <tr>
+                  <td>Členství na 3 měsíc</td>
+                  <td>5050,-/4300,-</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="pricing__list">
+            <table class="table table--pricing">
+              
+              <tbody>
+                <tr>
+                  <th>Osobní trenéři</th>
+                  <th></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th class="table__subtitle">Jiří D.</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Osobní trénink</td>
+                  <td>500,-/os.</td>
+                </tr>
+                <tr>
+                  <td>Sestavení tréninkového plánu</td>
+                  <td>500,-</td>
+                </tr>
+                <tr>
+                  <td>Měsíční trenérství 24/7</td>
+                  <td>5000,-</td>
+                </tr>
+                <tr>
+                  <td>Skupinové trénování</td>
+                  <td>300,-/os.</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="pricing__list">
+            <table class="table table--pricing">
+              <tbody>
+                <tr>
+                  <th>Masáž</th>
+                  <th></th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>Relexační olejová <br><span class="massage">(záda, šíje)</span></td>
+                  <td>300,-/30 min.</td>
+                </tr>
+                <tr>
+                  <td>Relexační olejová <br><span class="massage">(záda, šíje, zadní strana nohou)</span></td>
+                  <td>550,-/60 min.</td>
+                </tr>
+                <tr>
+                  <td>Relexační olejová <br><span class="massage">(záda, šíje, nohy)</span></td>
+                  <td>800,-/90 min.</td>
+                </tr>
+                <tr>
+                  <td>Lávovými kameny <br><span class="massage">(záda, šíje, zadní strana nohou)</span></td>
+                  <td>600,-/60 min.</td>
+                </tr>
+                <tr>
+                  <td>Chodidel</td>
+                  <td>300,-/30 min.</td>
+                </tr>
+                <tr>
+                  <th class="table__subtitle">Ostatní služby</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>Rašelinový obklad<br><span class="massage">(záda)</span></td>
+                  <td>300,-/30 min.</td>
+                </tr>
+                <tr>
+                  <td>Parafínový zábal<br><span class="massage">(ruce, nohy)</span></td>
+                  <td>300,-/30 min.</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+         </div>
+      </div>
+
+
+    </section>
+
+    <section class="trainers" id="osobni-treneri">
+      <div class="circle-trainers"></div>
+      <div class="trainers__container grid">
+        <div class="trainers__data section__data container">
+          <h2>Vyberte si z našich trenérů</h2>
+          <p class="trainers__description">Náš personál je týmem fitness nadšenců, kteří se neustále průběžně vzdělávají. O cvičení a věcech souvisejících vědí první poslední a s úsměvem vás seznámí se vším, co vás zajímá. V rámci individuálního osobního tréninku zhodnotí vaše silné a slabé stránky, zvolí cviky na míru a poskytnou tolik potřebnou motivaci. Samozřejmostí je, že naši trenéři propojují své služby sestavení tréninkového plánu také s doporučením vhodného jídelníčku.</p>
+        </div>
+        <div class="trainers__bg">
+          <div class="trainers__content grid">            
+            <article class="card jiri-dejmal">
+              <div class="card-content">
+                <h3 class="card-title">Jiří Dejmal</h3>
+                <div class="card-body">
+                  <div class="card__accordion">
+                    <div><i class="fa-solid fa-phone card__icon"></i></div>
+                    <div class="card__link"><a class="card__link" href="tel:+420603883470">+420 603 883 470</a></div>
+                  </div>
+                  <div class="card__accordion">
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                    <div class="card__link"><a class="card__link" href="https://www.instagram.com/jiri_dejmik/" target="_blank">@jiri_dejmik</a></div>
+                  </div>
+                  <div class="card__accordion">
+                    <p>Služby: osobní trénink, sestavení tréninkového plánu, měsíční trenérství 24/7, skupinové trénování</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card vitek-rysanek">
+              <div class="card-content">
+                <h3 class="card-title">Vítek Ryšánek</h3>
+                <div class="card-body">
+                  <div class="card__accordion">
+                    <div><i class="fa-solid fa-phone card__icon"></i></div>
+                    <div class="card__link"><a class="card__link" href="tel:+420721778962">+420 721 778 962</a></div>
+                  </div>
+                  <div class="card__accordion">
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                    <div class="card__link"><a class="card__link" href="https://www.instagram.com/vitekrysanektrainer/" target="_blank">@vitekrysanektrainer</a></div>
+                  </div>
+                  <div class="card__accordion">
+                    <p>Služby - tvarování postavy, nabíraní svalové hmoty, redukce tuku, silový trénink, cvičení s vlastní vahou, odstranění bolesti zad</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact container" id="kontakt">
+      <div class="contact__content">
+        <h4>Máte nějaký dotaz?</h4>
+        <div class="contact__info">
+          <a class="contact__link" href="mailto:info@fitnesskh.cz">info@fitnesskh.cz</a>
+          <a class="contact__link" href="tel:+420721124181">+420 721 124 181</a>
+        </div>
+      </div>
+    </section>
+      
+  </main>
+
+  <footer class="footer">
+    <div class="section container ">
+      <div class="footer__content">
+        <div class="footer__description">
+          <a href="#">
+            <img src="img/logo-bile.svg" alt="logo">
+          </a>
+          <p>Budeme se těšit na vaši návštěvu. Své služby rádi poskytujeme co nejširšímu spektru klientů, protože zdravý životní styl je zkrátka naší vášní. Vítáme začátečníky i pokročilé - neváhejte udělat krok k lepší kondici již dnes!
+          </p>
+        </div>
+        <div class="footer__columns">
+          <div class="footer__menu">
+            <ul>
+              <h4>Pro zákazníky</h4>
+              <li><a href="http://soner.cz/fitness/" target="_blank">Rezervovat lekce</a></li>
+              <li><a href="https://unibook.cz/masazefitness" target="_blank">Rezervovat masáž</a></li>
+              <li><a href="#sluzby">Služby</a></li>
+              <li><a href="#cenik">Ceník</a></li>
+              <li><a href="#osobni-treneri">Osobní trenéři</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <ul>
+              <h4>Fitness Centrum</h4>
+              <li><a href="#o-nas">O nás</a></li>
+              <li><a href="#lokalita">Adresa a otevírací doba</a></li>
+              <li><a href="#prostory">Prostory</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+              <li><a href="../kutna-hora/index.html">Pobočka Kutná Hora</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <ul>
+              <h4>Sledujte nás</h4>
+              <li><a href="https://www.facebook.com/fitnesskh.cz" target="_blank">Facebook</a></li>
+              <li><a href="https://www.instagram.com/fitkokh" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__line"></div>
+      <div class="footer__bottom">
+        <ul class="footer__bottom--list">
+          <li>Máte dotaz? <a href="tel:+420721124181">+420 721 124 181</a></li>
+          <li>&copy <span id="currentYear">2020</span> Fitness Centrum Kutná Hora</li>
+          <li>Created by <a href="https://www.lajkr.cz" target="_blank">LAJKR</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

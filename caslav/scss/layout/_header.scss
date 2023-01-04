@@ -1,0 +1,98 @@
+@use "../abstracts" as *;
+
+/* ========== HEADER =========== */
+.header {
+  width: 100%;
+  background-color: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-radius: 0 0 $border-radius $border-radius;
+  box-shadow: $box-shadow;
+}
+
+/* ========== NAVIGATION =========== */
+.nav {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    position: fixed;
+    background-color: var(--bg-color);
+    padding: 2.5rem 0;
+    width: 100%;
+    top: -100%; //5rem when click
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: .4s;
+    border-radius: 0 0 $border-radius $border-radius;
+    z-index: 11;
+    @include breakpoint(large) {
+      position: static;
+      background-color: transparent;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    @include breakpoint(large) {
+      flex-direction: row;
+      column-gap: 3rem;
+      justify-content: end;
+    }
+  }
+
+  &__link {
+    color: var(--body-color);
+    transition: .4s ease-in-out;
+  }
+  &__link::after {
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: black;
+    display: block;
+    transition: .5s ease-in-out;
+  }
+  &__link:hover::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    display: block;
+  }
+  &__toggle {
+    color: var(--body-color);
+  }
+  &__toggle, &__close {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  &__close {
+    display: none;
+  }
+  &__toggle {
+    @include breakpoint(large) {
+      display: none;
+    }
+  }
+}
+
+/* Show menu */
+.show-menu {
+  top: calc($header-height - 1rem);
+}
+
+.hide-toggle {
+  display: none;
+}
+
+.show-close {
+  display: block;
+}

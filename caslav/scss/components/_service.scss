@@ -1,0 +1,54 @@
+@use "../abstracts/" as *;
+
+.service {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  @include breakpoint(large) {
+    padding-bottom: 7rem;
+  }
+  &__title {
+    @include breakpoint(medium) {
+      max-width: 500px;
+      margin-inline: auto;
+    }
+  }
+  &__description {
+    @include breakpoint(large) {
+      max-width: 800px;
+      margin-inline: auto;
+    }
+  }
+  &__offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    @include breakpoint(medium) {
+      gap: 2rem;
+    }
+    @include breakpoint(large) {
+      flex-direction: row;
+    }
+  }
+  &__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 270px;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    color: var(--body-color);
+    @include breakpoint(medium) {
+      max-width: 400px;
+    }
+    & h4 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.7rem;
+    }
+  }
+  &__filter {
+    filter: brightness(0.8);
+  }
+}
+

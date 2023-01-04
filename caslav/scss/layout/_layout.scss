@@ -1,0 +1,32 @@
+@use "../abstracts/" as a;
+
+.section {
+  padding: 4rem 0 4rem;
+  
+  &__data {
+    text-align: left;
+    &-center {
+      text-align: center;
+    }
+  }
+}
+
+.container {
+  max-width: 968px;
+  margin-left: a.rem(24);
+  margin-right: a.rem(24);
+  @include a.breakpoint(large) {
+    max-width: a.rem(1275);
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+
+

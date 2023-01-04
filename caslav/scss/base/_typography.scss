@@ -1,0 +1,63 @@
+@use "../abstracts/" as a;
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: a.rem(30);
+  margin-bottom: 0.6rem;
+}
+h2 {
+  font-size: a.rem(28);
+  margin-bottom: 2rem;
+}
+h3 {
+  font-size: a.rem(22);
+}
+h4 {
+  font-size: a.rem(20);
+}
+
+@include a.breakpoint(medium) {
+  h3 {
+    font-size: a.rem(24);
+  }
+  h4 {
+    font-size: a.rem(24);
+  }
+}
+@include a.breakpoint(large) {
+  h1 {
+    font-size: a.rem(36);
+  }
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.8; // 33/18
+  font-size: a.rem(18);
+}
+
+ul {
+  font-size: a.rem(18);
+  list-style: none;
+  line-height: 1.8;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+td {
+  font-size: a.rem(16);
+  @include a.breakpoint(medium) {
+    font-size: a.rem(18);
+  }
+}
+

@@ -1,0 +1,148 @@
+@use "../abstracts/" as *;
+
+.gallery {
+  @include breakpoint(medium) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background: linear-gradient(to bottom, var(--bg-color) 0%,var(--bg-color) 50%, var(--bg-color-alt) 50%,var(--bg-color-alt) 100%);
+  }
+  @include breakpoint(large) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint(large) {
+      max-width: rem(1275);
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: rem(400);
+  @include breakpoint(medium) {
+    height: 40rem;
+  }
+  // @include breakpoint(large) {
+  //   max-width: 1275px;
+  //   padding: 0 1.5rem;
+  // }
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  @include breakpoint(medium) {
+    border-radius: $border-radius;
+  }
+  
+}
+
+.swiper-btn-bg {
+  position: absolute;
+  display: flex;
+  z-index: 20;
+  bottom: 0;
+  transform: translateY(50%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.swiper-btn-next, .swiper-btn-prev {
+  cursor: pointer;
+  background-color: var(--bg-color);
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  transition: .5s;
+  &:hover {
+    background: var(--bg-color-black);
+    color: var(--detail-color-white);
+  }
+}
+
+
+// .gallery {
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+// }
+
+// .swiper {
+//   width: 100%;
+//   height: 400px;
+// }
+
+// .swiper-slide {
+//   background-size: cover;
+//   background-position: center;
+//   background-attachment: fixed;
+
+
+//   /* Center slide text vertically */
+//   // display: -webkit-box;
+//   // display: -ms-flexbox;
+//   // display: -webkit-flex;
+//   // display: flex;
+//   // -webkit-box-pack: center;
+//   // -ms-flex-pack: center;
+//   // -webkit-justify-content: center;
+//   // justify-content: center;
+//   // -webkit-box-align: center;
+//   // -ms-flex-align: center;
+//   // -webkit-align-items: center;
+//   // align-items: center;
+// }
+
+// // .swiper-slide img {
+// //   display: block;
+// //   width: 100%;
+// //   height: 100%;
+// //   object-fit: cover;
+// // }
+// .swiper-btn-bg {
+//   border-radius: 10px;
+//   overflow: hidden;
+//   align-items: stretch;
+//   // transform: translateX(-50%);
+//   // transform: translateY(50%);
+//   display: flex;
+//   justify-content: center;
+//   z-index: 20;
+//   bottom: 0;
+//   position: absolute;
+  
+  
+  
+
+// //   width: 270px;
+//   transform: translateY(50%);
+// }
+
+// .swiper-btn-next, .swiper-btn-prev {
+//   cursor: pointer;
+// //   width: 50%;
+//   background: var(--bg-color);
+//   opacity: 1;
+//   // display: flex;
+//   // justify-content: center;
+//   padding-left: 3.5rem;
+//   padding-right: 3.5rem;
+//   padding-top: 2.5rem;
+//   padding-bottom: 2.5rem;
+//   transition: .5s;
+//   &:hover {
+//     color: var(--detail-color-white);
+//     background: var(--bg-color-black);
+//   }
+// }

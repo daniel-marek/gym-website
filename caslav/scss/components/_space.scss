@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+.space {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  @include breakpoint(large) {
+    padding-top: 7rem;
+  }
+  &__description {
+    @include breakpoint(large) {
+      max-width: 50rem;
+    }
+  }
+}
