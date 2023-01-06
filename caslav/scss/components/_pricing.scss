@@ -3,9 +3,10 @@
 .pricing {
   background: var(--bg-color-alt);
   padding-top: 4rem;
-  margin-bottom: 18rem;
+  margin-bottom: 10rem;
   @include breakpoint(large) {
     padding-top: 7rem;
+    margin-bottom: 18rem;
   }
   &__container {
     padding-top: 4rem;
@@ -17,12 +18,12 @@
     }
   }
   &__section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 1rem;
-    margin-bottom: -18rem;
+    margin-bottom: -10rem;
     @include breakpoint(large) {
-      flex-direction: row;
+      grid-template: repeat(2, 1fr) / repeat(2,1fr);
+      margin-bottom: -18rem;
     }
   }
   &__list {

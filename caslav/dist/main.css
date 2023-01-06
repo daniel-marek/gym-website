@@ -416,11 +416,12 @@ iframe:hover {
 .pricing {
   background: var(--bg-color-alt);
   padding-top: 4rem;
-  margin-bottom: 18rem;
+  margin-bottom: 10rem;
 }
 @media (min-width: 64em) {
   .pricing {
     padding-top: 7rem;
+    margin-bottom: 18rem;
   }
 }
 .pricing__container {
@@ -435,14 +436,14 @@ iframe:hover {
   }
 }
 .pricing__section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
-  margin-bottom: -18rem;
+  margin-bottom: -10rem;
 }
 @media (min-width: 64em) {
   .pricing__section {
-    flex-direction: row;
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+    margin-bottom: -18rem;
   }
 }
 .pricing__list {
