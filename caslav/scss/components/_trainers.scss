@@ -18,6 +18,10 @@
     background: var(--bg-color-alt);
     padding: 0 1.5rem 4rem 1.5rem;
     margin-top: 10rem;
+    @include breakpoint(large) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
   &__content {
     margin-top: -10rem;
@@ -25,7 +29,8 @@
       grid-template: repeat(1, 1fr) / repeat(2, 1fr);
     }
     @include breakpoint(large) {
-      max-width: rem(900);
+      grid-template-columns: repeat(3,1fr);
+      max-width: rem(1275);
       margin-inline: auto;
       padding-left: 1.5rem;
       padding-right: 1.5rem;
@@ -75,19 +80,20 @@
 
 .jiri-dejmal {
   background-image: url(../img/jiri-dejmal.jpg);
+  background-position: center;
 }
 
 .vitek-rysanek {
   background-image: url(../img/vitek-rysanek.jpg);
+  background-position: center;
 }
 
-.pavlina-zaluzanska {
-  background-image: url(../img/pavlina-zaluzanska.jpg);
+.jaroslav-tobiska {
+  background-image: url(../img/jaroslav-tobiska.jpg);
+  background-position: center;
 }
 
-.otakar-sila {
-  background-image: url(../img/otakar-sila.jpg);
-}
+
 
 .card {
   color: var(--body-color-alt);
@@ -96,6 +102,7 @@
   border-radius: $border-radius;
   overflow: hidden;
   transition: transform .5s ease;
+  z-index: 10;
 }
 
 .card:hover, .card:focus-within {
