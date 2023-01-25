@@ -11,6 +11,7 @@
   --footer-grey: #C7C7C7;
   --detail-color: #000000;
   --detail-color-white: #ffffff;
+  --detail-color-red: #E52428;
 }
 
 /*======= Fonts =======*/
@@ -616,6 +617,12 @@ iframe:hover {
   padding: 0 1.5rem 4rem 1.5rem;
   margin-top: 10rem;
 }
+@media (min-width: 64em) {
+  .trainers__bg {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .trainers__content {
   margin-top: -10rem;
 }
@@ -626,7 +633,8 @@ iframe:hover {
 }
 @media (min-width: 64em) {
   .trainers__content {
-    max-width: 56.25rem;
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    max-width: 79.6875rem;
     margin-inline: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -664,25 +672,34 @@ iframe:hover {
     left: -10%;
     width: 300px;
     height: 300px;
-    background: #E52428;
+    background: var(--detail-color-red);
     border-radius: 100%;
     filter: blur(10rem);
   }
 }
 .jiri-dejmal {
   background-image: url(../img/jiri-dejmal.jpg);
+  background-position: center;
 }
 
 .veronika-markova {
   background-image: url(../img/veronika-markova.jpg);
+  background-position: center;
 }
 
 .pavlina-zaluzanska {
   background-image: url(../img/pavlina-zaluzanska.jpg);
+  background-position: center;
 }
 
 .otakar-sila {
   background-image: url(../img/otakar-sila.jpg);
+  background-position: center;
+}
+
+.tereza-hruskova {
+  background-image: url(../img/tereza-hruskova.jpg);
+  background-position: center;
 }
 
 .card {
@@ -692,6 +709,7 @@ iframe:hover {
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.5s ease;
+  z-index: 10;
 }
 
 .card:hover, .card:focus-within {
